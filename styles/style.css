@@ -1,0 +1,248 @@
+:root{
+    --main-color: #242635;
+    --accent-color: #F1A600;
+    --tittle-color: #34B0BE;
+    --white-color: #FFFFFF;
+    --gray-color:#D1CECA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .5rem 1.25rem;
+    background-color: transparent;
+    height: 50px;
+}
+
+nav>div img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+    
+}
+
+input#menu-hamburguesa~ul{
+    background-color: var(--gray-color);
+    width: 10%;
+    list-style: none;
+    height: 30%;
+    position: absolute;
+    right: 100%;
+    transition:none 300ms linear;
+    z-index: 100;
+    
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+    
+}
+
+input#menu-hamburguesa:checked ~ ul li{
+    cursor: pointer;
+}
+
+#about-section{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+#about-section>div{
+    position: absolute;
+    left: 0;
+    padding: 0 1.25rem; 
+}
+
+#about-section h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+}
+
+#about-section h1>span{
+  
+    color: var(--tittle-color);
+    display: block;
+    font-weight:bold;
+    font-size: 100px;
+    margin-top: 10px;
+    text-decoration:overline var(--white-color);
+
+}
+
+#about-section div>p{
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: var(--gray-color);
+}
+
+
+
+.fotoCv{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+#about-section .derecha{
+    position: absolute;
+    right: 0;
+    font-size: 32px;
+    color:var(--gray-color);
+}
+
+.derecha span{
+    color: var(--tittle-color);
+    font-weight:bold;
+}
+
+#about-section .redesSociales{
+    position:absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redesSociales .icon-red{
+    width: 40px;
+    height: 40px;
+    margin: .4rem;
+    background: var(--gray-color);
+    border-radius: 50%;
+    z-index: 80;
+    padding: .5rem;
+    /*align-items: center;*/
+}
+
+.icon-red .icon{
+    z-index: 85;
+    width: 24px;
+    height: 24px;
+}
+
+
+#personal-info-section{
+   text-align: center;
+   position: relative;  
+}
+
+
+#personal-info-section p{
+    font-size: 18px;
+    color: var(--gray-color);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--tittle-color);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.academic-wrapper{
+    background-color: rgb(71, 71, 71);
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    background-color: var(--gray-color);
+    width: 10rem;
+    height: auto;
+    margin: 2rem;
+    padding: 1rem;
+    align-items:center ;
+    border-radius: 10px;
+}
+
+.logo{
+    width:5rem;
+    height: 5rem;
+    
+}
+
+#servicios{
+    
+    text-align: center;
+    padding: 1.5rem;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+
+
+ .servicios-wrapper{
+    width: 80%;
+    height: 30rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .card-servicios{
+    background-color: var(--white-color);
+    width: 20rem;
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 5px;
+
+    background-image: url("../assets/Vectores/Ellipse\ 14.svg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: contain;
+}
+
+.logo-servicios{
+    margin-top: 5rem;
+
+}
+
+.card-servicios h1{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.card-servicios p{
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--gray-color);
+}
+
